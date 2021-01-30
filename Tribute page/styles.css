@@ -1,3 +1,13 @@
+:root {
+    --skin-color: #e5c8a0;
+    --hair-color: #564440;
+    --glasses-color-light: #8D6A60;
+    --glasses-color-dark: #28231E;
+    --eye-color: #69726C;
+    --lip-color: #C97480;
+    --lip-color-dark: #8E4B54;
+}
+
 html{
     font-size:small;
 }
@@ -11,6 +21,7 @@ body {
     text-align: center;
     color: #333;
     margin: 0;
+    background: #C39EC3;
   }
   
   #container {
@@ -20,28 +31,12 @@ body {
     margin: 0 auto;
   }
   
-  :root {
-    --skin-color: #e5c8a0;
-    --hair-color: #564440;
-    --glasses-color-light: #8D6A60;
-    --glasses-color-dark: #28231E;
-    --eye-color: #69726C;
-    --lip-color: #C97480;
-    --lip-color-dark: #8E4B54;
-  }
-  
-  body{
-    background: #C39EC3;
-  }
-  
   .box-canvas{
     position: relative;
     margin: auto;
     display: block;
     margin-top: 8%;
     margin-bottom: 8%;
-    
-    
   }
   
   .box-canvas::before {
@@ -50,43 +45,39 @@ body {
     left: 50%;
     transform: translateX(-50%);
     top: 20px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 10px solid #8947AA;
     border-radius: 50%;
-    background: linear-gradient(to top,
-      transparent,
-      transparent 80px,
-      #C39EC3 80px,
-      #C39EC3 
-    ), linear-gradient(to right,
-    transparent, 
-    transparent 40px, 
-    var(--skin-color) 40px, 
-    var(--skin-color) 60px, 
-    transparent 60px, 
-    transparent 140px,
-    var(--skin-color) 140px,
-    var(--skin-color) 160px,
-    transparent 160px,
-    transparent
-  )
-    ;
   }
   
   .box-canvas::after {
-     content: '';
+    content: '';
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 20px;
-    width: 200px;
-    height:200px;
+    width: 150px;
+    height:150px;
     border: 10px solid #8947AA;
     border-radius: 50%;
     border-top-color: transparent;
   }
   
+  .circlecontainer::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    width: 170px;
+    height:170px;
+    border: 20px solid #C39EC3;
+    border-radius: 50%;
+    border-top-color: transparent;
+  }
+
   .head {
     position: absolute;
     top: 20px;
@@ -194,12 +185,13 @@ body {
        top:20%;
        left:50%;
     }
-    glasses-bridge {
+    .glasses-bridge {
         position:absolute;
+        z-index: -1;
         background-color: #DA9534;
         height:3px;
-        width:15px;
-        top:45%;
+        width:6px;
+        top:35%;
         left:45%;
       }
 
@@ -282,34 +274,8 @@ body {
     background: var(--hair-color);
     border-radius: 50%;
   }
-  
+    
   .tshirt {
-    position: absolute;
-    top: 130px;
-    width: 76px;
-    left: 50%;
-    transform: translateX(-100%) skew(-10deg, -10deg);
-    height: 65px;
-    background: white;
-    background: linear-gradient(to top, #C39EC3, white);
-    background: #FF66B6;
-    border-radius: 30% 0 0 0;
-  }
-  
-  .tshirt::before {
-    content: '';
-    position: absolute;
-    width: 76px;
-    left: 75px;
-    top: 12px;
-    transform: skew(20deg, 20deg);
-    height: 65px;
-    background: linear-gradient(to top, #C39EC3, white);
-    background: #FF66B6;
-    border-radius: 0 30% 0 0;
-  }
-  
-  .dungarees {
     position: absolute;
     width: 85px;
     height: 80px;
@@ -317,6 +283,9 @@ body {
     background: #FF66B6;
     left: 50%;
     transform: translateX(-50%);
-    top: 150px;
+    top: 120px;
+    z-index: -2;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
   }
   
