@@ -1,0 +1,322 @@
+html{
+    font-size:small;
+}
+
+body {
+    /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+  }
+  
+  #container {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  :root {
+    --skin-color: #e5c8a0;
+    --hair-color: #564440;
+    --glasses-color-light: #8D6A60;
+    --glasses-color-dark: #28231E;
+    --eye-color: #69726C;
+    --lip-color: #C97480;
+    --lip-color-dark: #8E4B54;
+  }
+  
+  body{
+    background: #C39EC3;
+  }
+  
+  .box-canvas{
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    
+    
+  }
+  
+  .box-canvas::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #8947AA;
+    border-radius: 50%;
+    background: linear-gradient(to top,
+      transparent,
+      transparent 80px,
+      #C39EC3 80px,
+      #C39EC3 
+    ), linear-gradient(to right,
+    transparent, 
+    transparent 40px, 
+    var(--skin-color) 40px, 
+    var(--skin-color) 60px, 
+    transparent 60px, 
+    transparent 140px,
+    var(--skin-color) 140px,
+    var(--skin-color) 160px,
+    transparent 160px,
+    transparent
+  )
+    ;
+  }
+  
+  .box-canvas::after {
+     content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    width: 200px;
+    height:200px;
+    border: 10px solid #8947AA;
+    border-radius: 50%;
+    border-top-color: transparent;
+  }
+  
+  .head {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--skin-color);
+    width: 75px;
+    height: 100px;
+    border-radius: 30% 30% 50% 50%;
+    border-bottom: 2px solid #EAC1AD;
+  }
+  
+  .neck {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--skin-color);
+    top: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 0 0 50% 50%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .nose {
+    position: absolute;
+    left: 52%;
+    top: 47%;
+    transform: translate(-50%, -50%) skew(-10deg, -10deg);
+    height: 30px;
+    width: 15px;
+    border-radius: 50% 50% 40% 30%;
+    box-shadow: -2px 2px 0 var(--hair-color);
+  }
+  
+  .mouth {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45%) rotate(-10deg);
+    bottom: 18px;
+    width: 30px;
+    height: 15px;
+    box-shadow: 0 3px 0 var(--lip-color);
+    border-radius: 50%;
+  }
+  
+  
+  .eye {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    top: 25px;
+    border-top: 1px solid black;
+  }
+  
+  .eye.left {
+    background-color:#404040;
+    height:15px;
+    width:15%;
+    position:absolute;
+    top:27%;
+    left:25%;
+    border-radius:45%;
+    transform-origin: 50%;
+    animation: blinkeyes 5s infinite ;
+  }
+  
+  .eye.right {
+    background-color:#404040;
+    height:15px;
+    width:15%;
+    position:absolute;
+    top:27%;
+    left:60%;
+    border-radius:45%;
+    transform-origin: 50%;
+    animation: blinkeyes 5s infinite ;
+  }
+  @keyframes blinkeyes {
+    0%, 100% {transform: scale(1, .05);}5%,
+        95% {transform: scale(1, 1);}
+    }
+
+    .glasseslens-left {
+        position: absolute;
+        z-index: -1;
+        border:2px solid #DA9534;
+        background-color: rgba(255,255,255,0.3);
+        height:26px;
+        width:26px;
+        border-radius:40%;
+        top:20%;
+        left:8%;
+      }
+    .glasseslens-right {
+       position: absolute;
+       z-index: -1;
+       border:2px solid #DA9534;
+       background-color: rgba(255,255,255,0.3);
+       height:26px;
+       width:26px;
+       border-radius:40%;
+       top:20%;
+       left:50%;
+    }
+    glasses-bridge {
+        position:absolute;
+        background-color: #DA9534;
+        height:3px;
+        width:15px;
+        top:45%;
+        left:45%;
+      }
+
+  
+  .hair {
+    position: absolute;
+    background: var(--hair-color);
+  }
+  
+  .hair.top-left {
+    top: 8px;
+    width: 25px;
+    height: 85px;
+    border-radius: 50%;
+    left: calc(50% - 30px);
+    transform: rotate(40deg) translateX(-50%);
+  }
+  
+  .hair.top-right {
+    top: 8px;
+    width: 15px;
+    height: 65px;
+    border-radius: 50%;
+    right: calc(50% - 30px);
+    transform: rotate(-40deg) translateX(50%);
+  }
+  
+  .top-left::before {
+    content: '';
+    position: absolute;
+    background: var(--hair-color);
+    width: 27px;
+    height: 50px;
+    border-radius: 50%;
+    left: 10px;
+    top: 50px;
+  }
+  
+  .top-left::after {
+    content: '';
+    position: absolute;
+    background: var(--hair-color);
+    width: 27px;
+    height: 50px;
+    border-radius: 50%;
+    top: 70px;
+    left: 20px;
+  }
+  
+  
+  
+  .hair-back {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 115px;
+    background: var(--hair-color);
+    border-radius: 50% 50% 10% 10%;
+  }
+  
+  .hair-back::before {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: 40px;
+    width: 20px;
+    height: 40px;
+    background: var(--hair-color);
+    border-radius: 50%;
+  }
+  
+  .hair-back::after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: 60px;
+    width: 20px;
+    height: 40px;
+    background: var(--hair-color);
+    border-radius: 50%;
+  }
+  
+  .tshirt {
+    position: absolute;
+    top: 130px;
+    width: 76px;
+    left: 50%;
+    transform: translateX(-100%) skew(-10deg, -10deg);
+    height: 65px;
+    background: white;
+    background: linear-gradient(to top, #C39EC3, white);
+    background: #FF66B6;
+    border-radius: 30% 0 0 0;
+  }
+  
+  .tshirt::before {
+    content: '';
+    position: absolute;
+    width: 76px;
+    left: 75px;
+    top: 12px;
+    transform: skew(20deg, 20deg);
+    height: 65px;
+    background: linear-gradient(to top, #C39EC3, white);
+    background: #FF66B6;
+    border-radius: 0 30% 0 0;
+  }
+  
+  .dungarees {
+    position: absolute;
+    width: 85px;
+    height: 80px;
+    background: linear-gradient(to top, #C39EC3, #333642);
+    background: #FF66B6;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+  }
+  
