@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
+  <div class="container">
     <header>
         <link rel="stylesheet" href="/Survey form/style.css">
     </header>
+
     <main>
-        <body>
+        <body >
             <h1 id="title">Pásale si hay</h1>
             <p id="description">
             Ayudanos llenando esta pequeña encuesta!
             </p>
             <form id="survey-form">
                 <div class="survey-question">
-                    <label for="name">Nombre:</label>
+                    <label id="name-label" for="name">Nombre</label>
                     <input 
                     id="name"
+                    name="name"
                     type="text"
                     placeholder="Ingresa tu nombre"
+                    class="form-control"
                     type="text"
-                    ><br>
+                    required
+                    >
                 </div>
                 <div class="survey-question">
-                    <label for="email">Email:</label>
+                    <label id="email-label" for="email">Email</label>
                     <input
                     id="email"
                     type="email"
@@ -28,31 +33,97 @@
                     max="20"
                     inputmode="email"
                     placeholder="Ingresa tu email"
+                    class="form-control"
+                    required
                     >
                 </div>
-                <div class="survey-question">
-                    <label for="name">Edad:</label>
+                <div class="survey-question" >
+                    <label id="number-label" for="name">Edad</label>
                     <input
                     type="number"
-                    id="name"
+                    id="number"
                     min="18"
                     max="99"
+                    class="form-control"
                     inputmode="numeric"
                     placeholder="Ingresa tu edad"
                     >
                 </div>
                 <div class="survey-question">
-                    <label for="opciones" id="dropdown" >Elige una opcion:</label>
-                    <select name="opciones" id="opciones">
-                    <option value="Opcion 1">Opcion 1</option>
-                    <option value="Opcion 2">Opcion 2</option>
-                    <option value="Opcion 3">Opcion 3</option>
-                    <option value="Opcion 4">Opcion 4</option>
+                    <label for="opciones">¿Cuál es tu presentación de cacao favorita?</label>
+                    <select name="opciones" id="dropdown" class="form-control">
+                    <option value="Cacao crudo">Cacao</option>
+                    <option value="Nibs de cacao">Nibs de cacao</option>
+                    <option value="Cacao en polvo">Cacao en polvo</option>
                     </select>
                 </div>
-
+                <div class="survey-question">
+                    <p>¿Has adquirido cacao con nosotros anteriormente?</p>
+                    <label>
+                      <input
+                        name="user-response"
+                        value="Si"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                      />Si</label
+                    >
+              
+                    <label
+                      ><input
+                        name="user-response"
+                        value="No"
+                        type="radio"
+                        class="input-radio"
+                      />No</label
+                    >
+                  </div>
+                <div class="survey-question">
+                    <p>¿En donde compraste el cacao?</p>
+                    <label>
+                      <input
+                        name="user-response"
+                        value="Pushkin"
+                        type="checkbox"
+                        class="input-checkbox"
+                        checked
+                      />Jardin Pushkin</label
+                    >
+              
+                    <label
+                      ><input
+                        name="user-response"
+                        value="Sotelo"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Lomas de Sotelo</label
+                    >
+                  <label
+                      ><input
+                        name="user-response"
+                        value="Tlalpan"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Barrio Tlalpan</label
+                    >
+                </div>
+                <div class="survey-question">
+                    <p>Sugerencias o comentarios</p>
+                    <textarea
+                      id="comments"
+                      class="input-textarea"
+                      name="comment"
+                      placeholder="Deja aqui tus comentarios..."
+                    ></textarea>
+                </div>
+                <div class="button-holder">
+                    <button type="submit" class="button" href="#">
+                    Enviar
+                    </button>
+                </div>
 
             </form>
         </body>
     </main>
+</div>
 </html>
