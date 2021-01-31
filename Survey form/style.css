@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+#title {
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+@media (min-width: 480px) {
+    form {
+    padding: 2.5rem;
+    }
+}
+
+.survey-question{
+    margin: 10px;
+    padding: 5px;
+    justify-self: center;
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }

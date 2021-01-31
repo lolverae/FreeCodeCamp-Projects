@@ -1,9 +1,58 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <main>
-            <body>
-                <h1 id="title">Formulario de Luis Alberto</h1>
-            </body>
-        </main>
-    </head>
+    <header>
+        <link rel="stylesheet" href="/Survey form/style.css">
+    </header>
+    <main>
+        <body>
+            <h1 id="title">Pásale si hay</h1>
+            <p id="description">
+            Ayudanos llenando esta pequeña encuesta!
+            </p>
+            <form id="survey-form">
+                <div class="survey-question">
+                    <label for="name">Nombre:</label>
+                    <input 
+                    id="name"
+                    type="text"
+                    placeholder="Ingresa tu nombre"
+                    type="text"
+                    ><br>
+                </div>
+                <div class="survey-question">
+                    <label for="email">Email:</label>
+                    <input
+                    id="email"
+                    type="email"
+                    min="10"
+                    max="20"
+                    inputmode="email"
+                    placeholder="Ingresa tu email"
+                    >
+                </div>
+                <div class="survey-question">
+                    <label for="name">Edad:</label>
+                    <input
+                    type="number"
+                    id="name"
+                    min="18"
+                    max="99"
+                    inputmode="numeric"
+                    placeholder="Ingresa tu edad"
+                    >
+                </div>
+                <div class="survey-question">
+                    <label for="opciones" id="dropdown" >Elige una opcion:</label>
+                    <select name="opciones" id="opciones">
+                    <option value="Opcion 1">Opcion 1</option>
+                    <option value="Opcion 2">Opcion 2</option>
+                    <option value="Opcion 3">Opcion 3</option>
+                    <option value="Opcion 4">Opcion 4</option>
+                    </select>
+                </div>
+
+
+            </form>
+        </body>
+    </main>
 </html>
