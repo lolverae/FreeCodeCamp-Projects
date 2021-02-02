@@ -1,0 +1,12 @@
+@media only screen and (min-width: 768px) {
+h1{
+    color: cornflowerblue;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+}
