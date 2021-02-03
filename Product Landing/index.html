@@ -7,15 +7,21 @@
         <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,500&display=swap" rel="stylesheet">
-        <link href="/Product Landing/css/normalize.css" rel="stylesheet">
-        <link href="/Product Landing/css/small.css" rel="stylesheet">
-        <link href="/Product Landing/css/medium.css" rel="stylesheet">
-        <link href="/Product Landing/css/large.css" rel="stylesheet">
+        <link href="/css/normalize.css" rel="stylesheet">
+        <link href="/css/small.css" rel="stylesheet">
+        <link href="/css/medium.css" rel="stylesheet">
+        <link href="/css/large.css" rel="stylesheet">
     </head>
 
 <body>
-    <header>
-        <h1> </h1>
+    <header class="clearfix">
+        <div class="row limited">
+            <section class="column small-12">
+                <img src = "/images/logo.png" alt="logo">
+                <h1>Pásele si hay</h1>
+                <h2>Chocolateria fina</h2>
+            </section>
+        </div><!--closes row in header-->
     </header>
 
     <nav>
@@ -27,5 +33,22 @@
             
         </body>
     </main>
+
+    <footer class="clearfix">
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Redes</h2>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Sobre el proyecto</h2>
+                <img src="images/logo.png" alt="logo" width="100px" height="100px">
+                <p>&copy; 2020 &bull; Derechos reservados.</p>
+            </section>
+        </div><!--end of row-->
+    </footer>
 </body>
 </html>
