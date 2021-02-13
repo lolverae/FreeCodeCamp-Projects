@@ -33,7 +33,7 @@ body {
 
 /* header rules start*/
 header{
-    background-color: bisque;
+    background-color: $principal;
 }
 
 header img {
@@ -74,7 +74,7 @@ button#anborguesaBtn{
 }
 
 nav {
-    background-color:#4e0909;
+    background-color:$nav;
 }
 
 nav ul{
@@ -169,7 +169,7 @@ main h1{
     min-width: 5em;
     display: inline-block;
     color: rgb(255, 255, 255);
-    background: #4e09098c;
+    background: $nav;
     border-radius: .5em;
     padding: 1%;
     font-size: medium;
@@ -185,7 +185,7 @@ main h1{
 
  /* footer rules start*/
  footer{
-     background-color: bisque;
+     background-color: $principal;
      font-size: 1.2rem;
  }
  footer h2 {
