@@ -27,6 +27,7 @@ body {
     margin: 0 0 .75rem 0;}
 
 .small-12{width: 100%;}
+.small-6{width: 50%;}
  /* grid rules */
 
 
@@ -37,9 +38,12 @@ header{
 
 header img {
     float: left;
-    width: auto;
-    height: 100px;
+    
+    height: auto;
+    width: 200px;
     padding: 10px;
+    margin-bottom: 0px;
+    
 }
 header h1, header h2 {
     margin: 0;
@@ -103,15 +107,60 @@ nav ul {
 }
 /*anvorguesa end*/
 
-/*hero image start*/
-
+/*main start*/
+main{
+    background-color:rgba(255, 228, 196, 0.712);
+}
 main img{
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    max-height: 25vh;
 }
 
-/*hero image end*/
+main h1{
+    color: #181717;
+    font-style: italic;
+    margin: .5rem 0 .1rem 0;
+    font-size: 2rem;
+}
 
+.labeled{
+    position: relative;
+}
+.labeled h6,
+.labeled p {
+    position: absolute;
+
+    background-color:rgba(255, 228, 196, 0.7);
+    margin: 0;
+    width: 100%;
+    padding: .3rem 1rem;
+}
+
+.labeled h6 {
+    top: 0;
+    font-size: 2rem;
+    font-weight: 300px;
+}
+
+.labeled p{
+    bottom: 0;
+    font-weight: 700;
+    color: #181717;
+}
+
+/*main end*/
+
+main h1{
+    color: #181717;
+    font-style: italic;
+    margin: .5rem 0 .1rem 0;
+    font-size: 2rem;
+}
+
+.recetas-img{
+    max-height: 150px;
+}
 
  /* footer rules start*/
  footer{
