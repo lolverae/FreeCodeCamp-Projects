@@ -103,6 +103,16 @@ nav ul {
 }
 /*anvorguesa end*/
 
+/*hero image start*/
+
+main img{
+    width: 100%;
+    height: auto;
+}
+
+/*hero image end*/
+
+
  /* footer rules start*/
  footer{
      background-color: bisque;
