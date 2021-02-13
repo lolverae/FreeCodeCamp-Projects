@@ -159,8 +159,29 @@ main h1{
 }
 
 .recetas-img{
-    max-height: 150px;
+    max-height: 15vh;
 }
+
+/*precio*/
+.tag-precio {
+    margin: 0;
+    height: 3em;
+    min-width: 5em;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: #4e09098c;
+    border-radius: .5em;
+    padding: 1%;
+    font-size: medium;
+    width: 50%;
+    height: 100%;
+    padding: .25em;
+    background-clip: padding-box;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
 
  /* footer rules start*/
  footer{
