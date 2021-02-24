@@ -1,10 +1,4 @@
-# FreeCodeCamp-Projects
-
-Estos son los proyectos que voy haciendo para el bootcamp de FreeCodeCamp.
-
-Son mis primeros proyectos incursionandome en el desarrollo web.
-
-Todos los proyectos están construidos con HTML y CSS puro, en algunas ocasiones agregué otras tecnicas para desarrollo reactivo y mobile-first por interés propio.
+This are some of the projects made during my learning journey into webdev. Most of the stuff is done using plaing HTML/CSS and JS but in some cases I added some tech that I wanted to learn like sass and mobile-first design.
 
 Keep on learning 🤓
 
