@@ -30,28 +30,29 @@ body {
 }
 
 .calculator > button:hover {
-  background-color: #e6cd29b7;
+  background-color: #e4d04f;
+}
+.calculator > button:active{
+  background-color: #eed00b;
+
 }
 .output {
   grid-column: 1 / -1;
-  background-color: rgba(0, 0, 0, .75);
-  display: flex;
-  align-items: flex-end;
+  background-color: #201d22;
   justify-content: space-around;
-  padding: 10%;
   word-wrap: break-word;
   word-break: break-all;
 }
 
-.output .previous-operand {
-  color: rgba(255, 255, 255, .75);
-  font-size: 1.5rem;
+.screen {
+  color: aliceblue;
+  font-size: 3.5rem;
+  font-family:monospace;
+  text-align: right;
+  padding: 5%;
 }
 
-.output .current-operand {
-  color: white;
-  font-size: 2.5rem;
-}
+
 .clear {
   grid-column:span 2;
 }
