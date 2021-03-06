@@ -1,3 +1,12 @@
+html { 
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .wrapper {
   display: flex;  
   flex-flow: row wrap;
@@ -9,14 +18,21 @@
   padding: 10px;
   flex: 1 100%;
 }
-
-.header {
+.hide{
+  display: none;
+  }
+header {
   background: #ea907a;
 }
-.header img{
+#cat-logo{
   float: left;
-  height: auto;
-  width: 30vw;
+  height: 15vh;
+  width: auto;
+}
+#dog-logo{
+  float: right;
+  height: 15vh;
+  width: auto;
 }
 
 .footer {
@@ -28,13 +44,6 @@
   background: #fbc687;
 }
 
-.aside-1 {
-  background:#ea907a;
-}
-
-.aside-2 {
-  background: #ea907a;
-}
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 0 0; }
@@ -62,3 +71,7 @@ footer{
 }
 
 
+a {
+  color: currentColor;
+  text-decoration: none;
+}
