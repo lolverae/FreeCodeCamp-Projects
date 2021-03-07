@@ -10,13 +10,8 @@ function myFunction() {
   if (checkBox.checked == true){
     addNewDoggo();
   } else {
-     text.style.display = "none";
   }
 }
-
-
-
-
 
 
 
